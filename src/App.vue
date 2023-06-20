@@ -1,19 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FormularioValidacion />
+    <!--
+    <ModificadoresEntrada />
+    <ModificadoresEvento />
+    <FormularioWeb />
+    <SelectDinamico :options="options" label="Select dinámico" id="dynamic" v-model="framework" />
+    -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormularioValidacion from "./components/FormularioValidacion.vue";
+// import ModificadoresEntrada from './components/ModificadoresEntrada.vue';
+// import ModificadoresEvento from "./components/ModificadoresEvento.vue";
+// import FormularioWeb from "./components/FormularioWeb.vue";
+// import SelectDinamico from "./components/SelectDinamico.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    FormularioValidacion
+    // ModificadoresEntrada
+    // FormularioWeb,
+    // SelectDinamico,
+    // ModificadoresEvento
+  },
+  data() {
+    return {
+      options: [
+        { name: "Angular", value: "angular" },
+        { name: "Vue", value: "vue" },
+      ],
+      framework: "angular",
+    };
+  },
+};
 </script>
 
 <style>
