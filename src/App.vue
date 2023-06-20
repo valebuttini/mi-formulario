@@ -1,30 +1,29 @@
 <template>
   <div id="app">
+
     <FormularioValidacion />
-    <!--
     <ModificadoresEntrada />
-    <ModificadoresEvento />
     <FormularioWeb />
     <SelectDinamico :options="options" label="Select dinámico" id="dynamic" v-model="framework" />
-    -->
+
   </div>
 </template>
 
 <script>
 import FormularioValidacion from "./components/FormularioValidacion.vue";
-// import ModificadoresEntrada from './components/ModificadoresEntrada.vue';
-// import ModificadoresEvento from "./components/ModificadoresEvento.vue";
-// import FormularioWeb from "./components/FormularioWeb.vue";
-// import SelectDinamico from "./components/SelectDinamico.vue";
+import ModificadoresEntrada from './components/ModificadoresEntrada.vue';
+import FormularioWeb from "./components/FormularioWeb.vue";
+import SelectDinamico from "./components/SelectDinamico.vue";
+
 
 export default {
   name: "App",
   components: {
-    FormularioValidacion
-    // ModificadoresEntrada
-    // FormularioWeb,
-    // SelectDinamico,
-    // ModificadoresEvento
+    FormularioValidacion,
+    ModificadoresEntrada,
+    FormularioWeb,
+    SelectDinamico,
+  
   },
   data() {
     return {

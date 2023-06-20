@@ -1,7 +1,8 @@
 <template>
     <form @submit.prevent="submitHandler">
-      <label for="name">Name</label>
+      <label for="name">Nombre completo</label>
       <input type="text" id="name" v-model="name" />
+      
       <button>Enviar</button>
     </form>
   </template>
@@ -12,6 +13,7 @@
       data() {
           return {
               name: "",
+
           };
       },
       methods: {
