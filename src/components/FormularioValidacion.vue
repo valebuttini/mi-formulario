@@ -3,7 +3,7 @@
       <label for="name">Nombre completo</label>
       <input type="text" id="name" v-model="name" />
       <button>Enviar</button>
-    </form>
+    </form> 
   </template>
   
   <script>
