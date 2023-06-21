@@ -1,10 +1,6 @@
 <template>
     <form action="">
       <div>
-        
-        <label for="name">Mi nombre</label>
-        <input type="text" id="name" v-model="name" />
-        {{ name }}
       </div>
 
       <div>
@@ -16,62 +12,52 @@
             v-model="checks"
             value="javascriptdesdevalue"
           />
-          <label for="checkJS">Ecelente</label>
+          <label for="checkJS">Excelente</label>
         </div>
         <div>
-          <input type="checkbox" id="checkReact" v-model="checks" value="react" />
-          <label for="checkReact">Buena</label>
+          <input type="checkbox" id="checkBuena" v-model="checks" value="buena" />
+          <label for="checkBuena">Buena</label>
         </div>
         <div>
-          <input type="checkbox" id="checkNg" v-model="checks" value="angular" />
-          <label for="checkNg">Regular</label>
+          <input type="checkbox" id="checkRegular" v-model="checks" value="regular" />
+          <label for="checkRegular">Regular</label>
         </div>
         <div>
-          <input type="checkbox" id="checkVue" v-model="checks" value="vue" />
-          <label for="checkVue">Mala</label>
+          <input type="checkbox" id="checkMala" v-model="checks" value="mala" />
+          <label for="checkMala">Mala</label>
         </div>
       </div>
       <div>
-        <label for="country">País</label>
-        <select id="country" v-model="country">
-          <option value="ar">Argentina</option>
-          <option value="fr">Francia</option>
-          <option value="it">Italia</option>
-          <option value="pt">Portugal</option>
-        </select>
-        {{ country }}
-      </div>
-      <div>
-        <h4>Tipo de documento</h4>
+        <h4>Calidad de la atencion del 1-3</h4>
         <div>
           <input
             type="radio"
-            name="documentType"
-            id="documentDNI"
-            v-model="document"
-            value="dni"
+            name="numberOne"
+            id="numberOne"
+            v-model="puntuacion"
+            value="one"
           />
-          <label for="documentDNI">DNI</label>
+          <label for="numberOne">1</label>
         </div>
         <div>
           <input
             type="radio"
-            name="documentType"
-            id="documentPassport"
-            v-model="document"
-            value="passport"
+            name="numbertwo"
+            id="numbertwo"
+            v-model="puntuacion"
+            value="two"
           />
-          <label for="documentPassport">Pasaporte</label>
+          <label for="numbertwo">2</label>
         </div>
         <div>
           <input
             type="radio"
-            name="documentType"
-            id="documentVisa"
-            v-model="document"
-            value="visa"
+            name="numberthree"
+            id="numberthree"
+            v-model="puntuacion"
+            value="three"
           />
-          <label for="documentVisa">VISA</label>
+          <label for="numberthree">3</label>
         </div>
       </div>
       <div>
@@ -90,9 +76,7 @@
         name: "",
         legal: false,
         checks: [],
-        country: "es",
-        multiCountry: [],
-        document: "",
+        puntuacion: "",
       };
     },
   };

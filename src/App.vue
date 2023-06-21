@@ -4,7 +4,6 @@
     <FormularioValidacion />
     <ModificadoresEntrada />
     <FormularioWeb />
-    <SelectDinamico :options="options" label="Select dinámico" id="dynamic" v-model="framework" />
 
   </div>
 </template>
@@ -13,7 +12,7 @@
 import FormularioValidacion from "./components/FormularioValidacion.vue";
 import ModificadoresEntrada from './components/ModificadoresEntrada.vue';
 import FormularioWeb from "./components/FormularioWeb.vue";
-import SelectDinamico from "./components/SelectDinamico.vue";
+
 
 
 export default {
@@ -22,7 +21,6 @@ export default {
     FormularioValidacion,
     ModificadoresEntrada,
     FormularioWeb,
-    SelectDinamico,
   
   },
   data() {

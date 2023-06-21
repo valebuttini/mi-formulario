@@ -4,7 +4,6 @@
         <label for="age">Edad</label>
         <input type="number" v-model.number="age" id="age" />
       </div>
-
     </div>
   </template>
   
